@@ -165,7 +165,6 @@ class Clustering:
             print('at first,', len(set(C_2)), 'clusters') 
             print(p - k, 'merges')
         for i in range(p - k):
-            # TODO: merge 2 closest clusters, update C_2
             # 1) find 2 closest clusters
             idx = np.argmin(Cnt_D)
             row, col = idx // (p + 1), idx % (p + 1)
